@@ -4,8 +4,21 @@ site_name: MkdocTemplate
 nav:
   - Home: index.md
   - Usage:
-    - How to Use MkdocsTemplate : usage/how-to-use-MkdocsTemplate.md
-    - Mkdocs User Guide: /usage/mkdocs/mkdocs-yml.md
+    - usage/how-to-use-MkdocsTemplate.md
+    - Mkdocs User Guide:
+      - mkdocs.yml: usage/mkdocs/mkdocs-yml.md
+      - Test: 
+        - usage/mkdocs/test.md
+    - Coding:
+      - Learning to code:
+          - code_learning.md
+          - Frontend developer: frontend_learning.md
+      - Languages:
+          - Python:
+              - python.md
+              - Project Template:
+                  - coding/python/python_project_template.md
+
 site_author: Crystal Chen
 site_description: >-
   DESCRIPTION
@@ -20,8 +33,12 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.footer
+    - navigation.instant
     - toc.integrate
-    - navigation.top
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
   language: en
   palette:
     - scheme: default
@@ -74,4 +91,4 @@ plugins:
   - search
 
 copyright: |
-  &copy; 2022 <a href="https://github.com/c17hawke"  target="_blank" rel="noopener">Sunny Bhaveen Chandra</a>
+  &copy; 2022 <a href="https://github.com/crystalhhc"  target="_blank" rel="noopener">Crystalhhc</a>
